@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>about me</title>
+        <style>
+            h1{
+                color:chocolate;
+            }
+            a,li{
+                color:crimson;
+            }
+        </style>
+    </head>
+    <body>
+        <p><h1>ABOUT ME</h1></p>
+        <p>thankyou for visiting my website, for any suggessions please either go to the suggesions page or</p>
+        <ul>
+            <li>contact: +92 4478970764</li>
+            <li>email: abdulqadir.shoaib2@gmail.com</li>
+            <li><a href="suggessions.html">suggessions</a></li>
+        </ul>
+        <input  type="text" id="name" value="test value"/>
+        <input  type="button" value="Test" name="test" onclick="buttonClicked()"/>
+        <input type="text" id="result" />
+    </body>
+    <script type="text/javascript">
+        function buttonClicked() {
+            var ans = 25 * 100;
+            var a = document.getElementById("name").value;
+
+            alert("Welcome " + a + " to my page" + " Result=" + ans);
+
+            document.getElementById("result").value = ans;
+        }
+    </script>
+</html>

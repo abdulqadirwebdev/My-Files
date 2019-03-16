@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facebook-log in or sign up</title>
+    <style>
+        .pa{
+            position: absolute;
+            top: 0;
+            margin-left: 150px;
+            height: 80;
+            width: 215;
+        }
+        tr, td{
+            border: 2px solid #385898;
+            padding: 10px;
+            
+        }
+        .td1{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: 200px;
+            padding: 4.5px;
+            background-color: #385898;
+            color: white;
+            font-family: sans-serif;
+        }
+        .td2{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: 450px;
+            padding: 17.5px;
+            background-color: #385898;
+            color: white;
+            font-family: sans-serif;
+        }
+        .in1{
+            margin-top: 8px;
+        }
+        .tdo{
+            color: #385898;
+            padding: 28px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6.25rem;
+            background-color: #385898;
+        }
+        .nav{
+            position: absolute;
+            top: 0;
+            margin-left: 360px;
+            padding: 28px;
+            width: 17.5rem;
+            background-color: #385898;
+            color: #385898;
+        }
+        #nav{
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 28px;
+            width: 9rem;
+            background-color: #385898;
+            color: #385898;
+        }
+        .pie{
+            margin-top: 117px;
+            font-size: 21px;
+            margin-left: 185px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .imh{
+            margin-left: 185px;
+        }
+        .sign{
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-top: 110px;
+            margin-right: 270px;
+            font-size: 37px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black;
+        }
+        .sign2{
+            margin-top: 170px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-right: 350px;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        .sign3{
+            margin-top: 370px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-right: 513px;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        .sign4{
+            margin-top: 410px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-right: 230px;
+            font-size: 13px;
+            font-family: sans-serif;
+            color: rgb(51, 70, 153);
+        }
+        .sign5{
+            margin-top: 455px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-right: 480px;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        .sign6{
+            margin-top: 455px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-right: 360px;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        .sign7{
+            margin-top: 490px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-right: 205px;
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+        .ini1{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 210px;
+            margin-right: 377px;
+            height: 2rem;
+            width: 13rem;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            font-size: 20px;
+        }
+        .ini2{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 210px;
+            margin-right: 155px;
+            height: 2rem;
+            width: 13rem;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            font-size: 20px;
+        }
+        .ini3{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 260px;
+            margin-right: 153px;
+            height: 2rem;
+            width: 27rem;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            font-size: 20px;
+        }
+        .ini4{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 310px;
+            margin-right: 153px;
+            height: 2rem;
+            width: 27rem;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            font-size: 20px;
+        }
+        .ini5{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 405px;
+            margin-right: 407px;
+            height: 2rem;
+            width: 11rem;
+            border: 1px solid lightgray;
+        }
+        .ini6{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 455px;
+            margin-right: 550px;
+            border: 1px solid lightgray;
+        }
+        .ini7{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 455px;
+            margin-right: 407px;
+            border: 1px solid lightgray;
+        }
+        .ini8{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 555px;
+            margin-right: 385px;
+            width: 200px;
+            height: 2.5rem;
+            border-radius: 5px;
+            color: white;
+            font: 19px Arial;
+            font-family: sans-serif;
+            background: linear-gradient(#67ae55, #578843);
+            background-color: #69a74e;
+            box-shadow: inset 0 1px 1px #a4e388;
+            border-color: #3b6e22 #3b6e22 #2c5115;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <img class="pa" src="images/facebook.jpg" />
+                <td class="tdo">No text</td>
+                <td class="nav">No text</td>
+                <td class="td2">Email or Phone<br /><input type="text" name="user" /></td>
+                <td class="td1">Password<br /><input class="in1" type="password" name="pass" /><button style="margin-left: 13px; background-color: rgb(71, 71, 134); color: white; border-color: rgb(86, 86, 156);">Log In</button><br />Forgotten account?</td>
+                <td id="nav">No text</td>
+            </tr>
+        </form>
+    </table>
+        <p class="pie">Facebook helps you connect and share with the<br /> people in your life.</p>
+        <img class="imh" src="images/facepicworld.png" />
+        <form>
+            <p class="sign">Create an account</p>
+            <p class="sign2">It's free and will always be.</p>
+            <input class="ini1" type="text" name="detail" placeholder="First name" />
+            <input class="ini2" type="text" name="detail" placeholder="Surname" /><br />
+            <input class="ini3" type="text" name="id" placeholder="Mobile number or email address" /><br />
+            <input class="ini4" type="password" name="pass" placeholder="New password" />
+            <p class="sign3">Birthday</p>
+            <input class="ini5" type="date" name="birth" /><p class="sign4">Why do i need to provide my<br /> date of birth?<br /></p>
+            <input class="ini6" type="radio" name="genre" /><p class="sign5">Female</p>
+            <input class="ini7" type="radio" name="genre" /><p class="sign6">Male</p>
+            <p class="sign7">By clicking Sign Up, you agree to our Terms, Data Policy and<br /> Cookie Policy. You may receive SMS notifications from us and can<br /> opt out at any time.</p>
+            <button class="ini8">Sign Up</button>
+        </form>
+</body>
+</html>
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+        <form>
+          <fieldset>
+              <legend>your details</legend>
+            <p>
+                <label id="test" for="username">username:</label>
+                <input type="text" name="username" required="required" size="15" maxlength="30" />
+                Note: give ur email address
+            </p>
+            <p>password:
+                <input type="password" name="password" required="required" size="15" maxlength="20" />
+                <label for="password">Note: minimum 4 characters</label>
+                <input type="submit" value="login" />
+            </p>
+            <p>what suggessions do you give for this website?<br />
+                <textarea name="comments" rows="10" cols="30">enter your suggessions....</textarea>
+            </p>
+            <p>select your gender:<br />
+                <input type="radio" name="gender" value="male" /> MALE
+                <input type="radio" name="gender" value="female" /> FEMALE
+                <input type="radio" name="gender" value="other" /> OTHER 
+            </p>
+          </fieldset>
+            <p>select your favorite laptop company:<br />
+                <input type="checkbox" name="company" value="dell" /> DELL
+                <input type="checkbox" name="company" value="lenovo" /> LENOVO
+                <input type="checkbox" name="company" value="imac" /> iMAC
+            </p>
+            <p>what device is the best according to you?<br />
+                <select name="best device">
+                    <option value="mobile">MOBILE</option>
+                    <option value="laptop">LAPTOP</option>
+                    <option value="t.v">T.V</option>
+                </select>
+            </p>
+            <p>what musical instrument do you play?(you can select multiple options<br /> by holding control on a pc or command on mac.)<br />
+                <select name="instrument" size="5" multiple="multiple">
+                    <option value="piano">PIANO</option>
+                    <option value="flute">FLUTE</option>
+                    <option value="drums">DRUMS</option>
+                    <option value="guitar">GUITAR</option>
+                </select>
+            </p>
+            <p>any songs to share? upload some<br />
+                <input type="file" name="song" /><br />
+                <input type="submit" value="upload" />
+            </p>
+            <p>subscribe to my email:<br />
+                <input type="email" name="email" />
+                <input type="submit" name="subscribe" value="subscribe" />
+            </p>
+            <p><label for="birth">date of birth:</label>
+                <input type="date" name="birth" />
+                <input type="submit" name="birth" value="ok" />
+            </p>
+            <p>show us your website:
+                <input type="url" name="web" />
+                <input type="submit" name="web" value="ok" />
+            </p>
+            <p>
+                <input type="search" name="g" placeholder="search...." />
+                <input type="submit" value="search" />
+            </p>
+            
+        </form>
+    </body>
+</html>

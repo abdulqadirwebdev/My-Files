@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        h1{
+            font-weight: bold;
+            color: darkblue;
+        }
+        .p1{
+            color: brown;
+            font-weight: bold;
+        }
+        .text{
+            color: darkorange;
+            font-weight: bold;
+        }
+        .inputdetails{
+            color: darkred;
+            font-weight: bold;
+        }
+        .setting-inputs{
+            background-color: yellow;
+            font-weight: bolder;
+            border: 3px solid transparent;
+        }
+        .setting-inputs:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <p class="p1">freeCodeCamp.org is a tiny non-profit that's helping millions of people learn to code for free.</p>
+    <form>
+        <p class="text">Let us know how we can improve freeCodeCamp</p>
+        <p class="inputdetails">Name:</p>
+        <input class="setting-inputs" type="text" name="name" placeholder="Your Name" />
+        <p class="inputdetails">Email:</p>
+        <input class="setting-inputs" type="email" name="email" placeholder="Your Email" />
+        <p class="inputdetails">Age:</p>
+        <input class="setting-inputs" type="date" name="age" />
+        <p>Which option best describes your current role</p>
+        <select name="role">
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to Say</option>
+            <option>Other</option>
+        </select>
+        <p class="text">How likely is that you would recommend freeCodeCamp to a friend?</p>
+        <label for="dfn">
+        <input id="dfn" type="radio" name="friend" value="definitely" />definitely
+        </label>
+        <label for="ns">
+        <input id="ns" type="radio" name="friend" value="not sure" />Not Sure
+        </label>
+        <label for="mbe">
+        <input id="mbe" type="radio" name="friend" value="Maybe" />Maybe
+        </label>
+        <p class="text">Things that should be improved in the future
+            (Check all that apply):</p>
+        <label for="fep">
+        <input type="checkbox" id="fep" name="fur" value="front-end projects" multiple="multiple" />Front-end Projects
+        </label>
+        <label for="bep">
+        <input type="checkbox" id="bep" name="bep" value="back-end projects" multiple="multiple" />Back-end Projects
+        </label>
+        <label for="dv">
+        <input type="checkbox" id="dv" name="dv" value="data visuallization" multiple="multiple" />Data Visualization
+        </label>
+        <label for="ces">
+        <input type="checkbox" id="ces" name="ces" value="data visuallization" multiple="multiple" />Challenges
+        </label>
+        <p class="text">Any Comments or Suggestion</p>
+        <textarea name="comments" cols="25" rows="5">Your comments...</textarea>
+    </form>
+</body>
+</html>
+
+
+
+
