@@ -17,33 +17,38 @@
         }
         #num1{
             height: 25px;
-            width: 50px; 
+            width: 80px; 
         }
         #num2{
             height: 45px;
             width: 80px;
             font-size: 1.5rem;
+            margin-right: 10px;
         }
         #num3{
             height: 45px;
             width: 80px;
-            margin-top: 20px;
+            margin-top: 10px;
+            margin-right: 10px;
+            font-size: 1.5rem;
         }
+
     </style>
     <script>
         function buttonClicked() {
-            var ans = ;
             var a = document.getElementById("num").value;
             var b = document.getElementById("num2").value;
+            var ans = parseFloat(a) + parseFloat(b);
+            document.getElementById("num3").value = ans;
         }
     </script>
 </head>
 <body>
     <form>
-        <h1>Add</h1>
+        <h1>Multiply</h1>
         <input type="number" id="num" />
         <input type="number" id="num2" />
-        <input type="button" id="num1" onclick="buttonClicked()" /><br />
+        <input type="button" id="num1" value="Calculate" onclick="buttonClicked()" /><br />
         <input type="text" id="num3" />
     </form>
 </body>
